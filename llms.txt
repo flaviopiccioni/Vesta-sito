@@ -1,0 +1,56 @@
+# Vesta
+
+> Property management di affitti brevi e medi, case vacanza e investimenti immobiliari in Italia. Vesta offre gestione completa (pulizie, ospiti, revenue management, manutenzioni e adempimenti) per proprietari che vogliono più rendimento senza pensieri. Opera a Milano, Lago di Como e Bellagio (Lombardia), Cervinia e Courmayeur (Valle d'Aosta), Cortina d'Ampezzo (Veneto), Stintino, Porto San Paolo e Teulada (Sardegna), Marzamemi e Palermo (Sicilia). Vesta S.r.l.s. — Via della Moscova 40-4, 20121 Milano (MI) — P.IVA 13127250960.
+
+## Pagine principali
+
+- [Home (italiano)](https://vestadomus.it/it/): panoramica di servizi, destinazioni, consulenza e opportunità di investimento.
+- [Gestione affitti brevi e medi a Milano](https://vestadomus.it/it/milano/): gestione affitti brevi e medi in tutta Milano, per proprietari; due mercati (breve e medio), domanda tutto l'anno.
+- [Milan (English)](https://vestadomus.it/en/milano/): short and mid-term rental management across Milan; two markets, year-round dynamic demand.
+- [Gestione affitti brevi a Cervinia](https://vestadomus.it/it/cervinia/): gestione di affitti brevi e case vacanza a Cervinia e Valtournenche, con stagionalità alpina, revenue management e adempimenti.
+- [Gestione affitti brevi a Valtournenche](https://vestadomus.it/it/valtournenche/): gestione affitti brevi e case vacanza a Valtournenche, valle del Cervino; stessa stagione lunga di Cervinia, adempimenti VdA.
+- [Gestione affitti brevi a Cortina d'Ampezzo](https://vestadomus.it/it/cortina/): gestione affitti brevi e case vacanza a Cortina, nel cuore delle Dolomiti; pagina di servizio, domanda tutto l'anno.
+- [Cortina d'Ampezzo (English)](https://vestadomus.it/en/cortina/): short-term rental and holiday home management in Cortina, in the Dolomites (service page).
+- [Gestione affitti brevi a Courmayeur](https://vestadomus.it/it/courmayeur/): affitti brevi e case vacanza a Courmayeur, versante italiano del Monte Bianco; già operativi in Valle d'Aosta.
+- [Courmayeur (English)](https://vestadomus.it/en/courmayeur/): short-term rental and holiday home management in Courmayeur, Italian side of Mont Blanc (service page).
+- [Gestione affitti brevi sul Lago di Como](https://vestadomus.it/it/lago-di-como/): gestione di affitti brevi e case vacanza sul Lago di Como per un turismo internazionale, tutte le tipologie di immobile.
+- [Gestione affitti brevi in Sardegna](https://vestadomus.it/it/sardegna/): hub regionale, gestione affitti brevi e case vacanza in tutta la Sardegna.
+- [Gestione affitti brevi in Lombardia](https://vestadomus.it/it/lombardia/): hub regionale, Milano e Lago di Como; città tutto l'anno e lago internazionale.
+- [Lombardy (English)](https://vestadomus.it/en/lombardy/): regional hub, Milan and Lake Como.
+- [Gestione affitti brevi in Valle d'Aosta](https://vestadomus.it/it/valle-d-aosta/): hub regionale, gestione affitti brevi e case vacanza in Valle d'Aosta (Cervinia e Courmayeur); doppia stagione lunga, adempimenti CIR/CIN gestiti.
+- [Valtournenche (English)](https://vestadomus.it/en/valtournenche/): short-term rental and holiday home management in Valtournenche, Matterhorn valley (service page).
+- [Aosta Valley (English)](https://vestadomus.it/en/aosta-valley/): regional hub, short-term rental and holiday home management in the Aosta Valley (Cervinia, Valtournenche, Courmayeur).
+- [Gestione affitti brevi in Sicilia](https://vestadomus.it/it/sicilia/): hub regionale, gestione affitti brevi e case vacanza in Sicilia (Marzamemi e Palermo); adempimenti regionali gestiti.
+- [Sicily (English)](https://vestadomus.it/en/sicily/): regional hub, short-term rental and holiday home management in Sicily (Marzamemi and Palermo).
+- [Gestione affitti brevi a Porto San Paolo](https://vestadomus.it/it/porto-san-paolo/): costa di fronte a Tavolara, nord-est Sardegna.
+- [Gestione affitti brevi a Teulada](https://vestadomus.it/it/teulada/): Tuerredda e coste del sud Sardegna.
+- [Gestione affitti brevi a Marzamemi](https://vestadomus.it/it/marzamemi/): gestione affitti brevi e case vacanza a Marzamemi e nel sud-est siciliano; stagione lunga tra mare e barocco, adempimenti Sicilia (CIR, CIN, Turist@t).
+- [Gestione affitti brevi a Palermo](https://vestadomus.it/it/palermo/): gestione affitti brevi e case vacanza a Palermo e sulla costa; pagina di servizio, domanda tutto l'anno, adempimenti Sicilia.
+- [Palermo (English)](https://vestadomus.it/en/palermo/): short-term and mid-term rental management in Palermo and its coast (service page).
+- [Marzamemi (English)](https://vestadomus.it/en/marzamemi/): short-term rental and holiday home management in Marzamemi, south-eastern Sicily (portfolio page).
+- [Gestione affitti brevi a Stintino](https://vestadomus.it/it/stintino/): gestione di affitti brevi e case vacanza a Stintino, vicino a La Pelosa, con stagionalità estiva e gestione completa.
+- [Home (English)](https://vestadomus.it/en/): English overview of short and mid-term rental management services.
+- [Lake Como (English)](https://vestadomus.it/en/lake-como/): short-term rental and holiday home management on Lake Como for international tourism.
+- [Sardinia (English)](https://vestadomus.it/en/sardinia/): short-term rental and holiday home management across Sardinia.
+- [Porto San Paolo (English)](https://vestadomus.it/en/porto-san-paolo/): Gallura, the sea of Tavolara.
+- [Teulada (English)](https://vestadomus.it/en/teulada/): south-west Sardinia, Tuerredda and wild coast.
+- [Cervinia (English)](https://vestadomus.it/en/cervinia/): short-term rental and holiday home management in Cervinia.
+- [Stintino (English)](https://vestadomus.it/en/stintino/): short-term rental and holiday home management in Stintino.
+
+## Servizi
+
+- [Gestione affitti brevi e medi](https://vestadomus.it/it/): affitti brevi (1-30 giorni) e medi (1-18 mesi) con la strategia più adatta a ogni immobile.
+- [Gestione completa e ospitalità](https://vestadomus.it/it/): check-in/out, pulizie, biancheria, assistenza ospiti, manutenzione e revenue management.
+- [Adempimenti e messa in regola](https://vestadomus.it/it/): CIN nazionale, codici regionali dove previsti (es. IUN in Sardegna), imposta di soggiorno e comunicazioni obbligatorie (Alloggiati Web).
+- [Consulenza e investimenti](https://vestadomus.it/it/): valutazione e ottimizzazione degli investimenti immobiliari, ristrutturazione e opportunità a reddito.
+
+## Contatti
+
+- [Email](mailto:info@vestadomus.it): info@vestadomus.it
+- [Instagram](https://www.instagram.com/vesta_domus): profilo ufficiale Vesta
+- [WhatsApp](https://wa.me/393517407898): contatto diretto
+
+## Note
+
+- [Privacy Policy](https://vestadomus.it/it/privacy/)
+- [Cookie Policy](https://vestadomus.it/it/cookie-policy/)
