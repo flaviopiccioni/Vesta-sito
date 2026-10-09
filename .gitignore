@@ -1,0 +1,4 @@
+# Documentazione interna: solo in locale, mai su GitHub né online
+docs/
+.claude/
+.DS_Store
