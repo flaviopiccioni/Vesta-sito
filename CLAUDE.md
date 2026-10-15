@@ -68,7 +68,7 @@ Ordine sezioni: nav con selettore lingua e dropdown per regione → hero (breadc
 - Vesta Srls Unipersonale, Via della Moscova 40-4, 20121 Milano, P.IVA 13127250960.
 - Email info@vestadomus.it, PEC vesta.s.r.l@pec.it, WhatsApp https://wa.me/393517407898, Instagram https://www.instagram.com/vesta_domus
 - Form Formspree: action https://formspree.io/f/mvzepzya; oggetto "Valutazione gratuita – <Località>" (EN "Free assessment – <Location>"; home "Contatto – Home – vestadomus.it") + campo nascosto "pagina" (EN "page") con l'URL.
-- Prenotazioni: Krossbooking, vestadomus.kross.travel; foto degli appartamenti dal CDN cdn.krossbooking.com.
+- Prenotazioni: Krossbooking, book.vestadomus.it (dal 2026-10; prima vestadomus.kross.travel); foto degli appartamenti dal CDN cdn.krossbooking.com.
 - GA4 G-91YC2FYM24, caricato SOLO dopo il consenso cookie (funzione vdApplyConsent). Eventi: generate_lead, whatsapp_click, booking_click, email_click.
 
 ## Foto
