@@ -12,7 +12,9 @@ os.chdir(SITE)
 BASE = 'https://vestadomus.it'
 HUBS = {'lombardia','lombardy','valle-d-aosta','aosta-valley','sardegna','sardinia','sicilia','sicily'}
 LEGAL = {'privacy','cookie-policy'}
-pages = sorted(glob.glob('*/*/index.html')) + [p for p in ('it/index.html','en/index.html') if os.path.exists(p)]
+# Pagine presenti nel repository ma non pubblicate (fuori da sitemap e llms.txt): vedi docs/DA-RIPRISTINARE.md
+NON_PUBBLICATE = {'/it/guide/agenzie-affitti-brevi-milano/', '/en/guides/short-term-rental-agencies-milan/'}
+pages = sorted(glob.glob('*/*/index.html') + glob.glob('*/*/*/index.html')) + [p for p in ('it/index.html','en/index.html') if os.path.exists(p)]
 existing = {'/' + p.rsplit('index.html',1)[0] for p in pages}
 sitemap = open('sitemap.xml', encoding='utf-8').read() if os.path.exists('sitemap.xml') else ''
 errs = defaultdict(list); warns = defaultdict(list)
@@ -22,9 +24,10 @@ def clean(x): return re.sub(r'\s+', ' ', html.unescape(re.sub('<[^>]+>', '', x))
 
 for p in pages:
     s = open(p, encoding='utf-8').read()
-    lang = p.split('/')[0]; slug = p.split('/')[1] if p.count('/') == 2 else ''
-    key = f'{lang}/{slug or "(home)"}'; E = errs[key]; W = warns[key]
-    url = f'{BASE}/{lang}/' + (f'{slug}/' if slug else '')
+    lang = p.split('/')[0]; slug = p.split('/')[1] if p.count('/') >= 2 else ''
+    sub = p.rsplit('/index.html', 1)[0].split('/', 1)[1] if slug else ''
+    key = f'{lang}/{sub or "(home)"}'; E = errs[key]; W = warns[key]
+    url = f'{BASE}/{lang}/' + (f'{sub}/' if sub else '')
     # URL e lingua
     can = re.search(r'<link rel="canonical" href="([^"]+)"', s)
     if not can or can.group(1) != url: E.append(f'canonical: {can.group(1) if can else "assente"}')
@@ -32,10 +35,11 @@ for p in pages:
     if not og or og.group(1) != url: E.append('og:url diverso dal canonical')
     hl = dict(re.findall(r'hreflang="([^"]+)"[^>]*href="([^"]+)"', s))
     if len(hl) != 3: E.append(f'hreflang: {len(hl)} invece di 3')
-    other = hl.get('en-US' if lang == 'it' else 'it-IT', '').replace(BASE, '')
+    if hl and (hl.get('x-default') != hl.get('it-IT') or url not in hl.values()): E.append('hreflang: x-default diverso dall\'italiano o pagina non autoreferenziata')
+    other = hl.get('en' if lang == 'it' else 'it-IT', '').replace(BASE, '')
     lg = re.search(r'<a class="lang" href="([^"]*)"', s)
     if other and (not lg or lg.group(1) != other): E.append('selettore lingua non coerente con hreflang')
-    if url not in sitemap: E.append('non presente in sitemap')
+    if url not in sitemap and url.replace(BASE, '') not in NON_PUBBLICATE: E.append('non presente in sitemap')
     # meta
     t = clean(re.search(r'<title>(.*?)</title>', s, re.S).group(1))
     d = re.search(r'<meta name="description" content="([^"]*)"', s); d = html.unescape(d.group(1)) if d else ''
@@ -55,8 +59,13 @@ for p in pages:
             wp = [n for n in g if n.get('@type') == 'WebPage']
             if wp and (wp[0].get('name') != t or wp[0].get('description') != d): E.append('WebPage nello schema diverso da title/description')
             fq = [n for n in g if n.get('@type') == 'FAQPage']
-            vis = [clean(a) for q, a in re.findall(r'<div class="faq-item"><h3>(.*?)</h3><p>(.*?)</p></div>', s, re.S)]
-            if fq and [x['acceptedAnswer']['text'] for x in fq[0]['mainEntity']] != vis: E.append('FAQ dello schema diverse da quelle visibili')
+            vis = [(clean(q), clean(a)) for q, a in re.findall(r'<div class="faq-item"><h3>(.*?)</h3><p>(.*?)</p></div>', s, re.S)]
+            # formato a domande: <h2 class="faq-q"> seguito dal primo <p class="... faq-a">
+            vis += [(clean(q), clean(a)) for q, a in re.findall(r'<h2 class="faq-q"[^>]*>(.*?)</h2>.*?<p class="[^"]*\bfaq-a\b[^"]*">(.*?)</p>', s, re.S)]
+            if fq:
+                sch = [(x['name'], x['acceptedAnswer']['text']) for x in fq[0]['mainEntity']]
+                if [a for q, a in sch] != [a for q, a in vis]: E.append('FAQ dello schema diverse da quelle visibili')
+                elif 'faq-q' in s and sch != vis: E.append('domande dello schema diverse dai titoli visibili')
         except Exception as ex: E.append(f'JSON-LD non valido: {ex}')
     # struttura
     if bal(s[s.find('<body'):]) != 0: E.append('div non bilanciate nella pagina')
@@ -68,7 +77,7 @@ for p in pages:
         if sec[8:].count('<section'): E.append(f'sezione annidata in "{name}"')
         if 'wrap split' in sec and re.search(r'class="(dcard|feat[^"]*|apts|svc-grid)"', sec): E.append(f'griglia dentro sezione con foto: "{name}"')
     # link, foto, form
-    for h in set(re.findall(r'href="(/(?:it|en)/[a-z-]*/?)"', s)):
+    for h in set(re.findall(r'href="(/(?:it|en)/(?:[a-z0-9-]+/)*)[#"]', s)):
         if h not in existing: E.append(f'link interno rotto: {h}')
     for a in re.findall(r'href="#([a-z]+)"', s):
         if f'id="{a}"' not in s: W.append(f'ancora #{a} senza destinazione')
@@ -84,6 +93,16 @@ for p in pages:
         if page != [url]: E.append(f'campo pagina del form: {page}')
     if slug and slug not in LEGAL and 'class="updated"' not in s: W.append('manca la riga "Aggiornato a"')
     if slug and slug not in LEGAL | HUBS and 'class="bcn"' not in s and slug != 'cortina': W.append('manca il breadcrumb visibile')
+
+# hreflang reciproci: la pagina indicata come alternativa deve puntare indietro
+alts = {}
+for p in pages:
+    t = open(p, encoding='utf-8').read()
+    u = re.search(r'<link rel="canonical" href="([^"]+)"', t); alts[u.group(1) if u else p] = dict(re.findall(r'hreflang="([^"]+)"[^>]*href="([^"]+)"', t))
+for u, hl in alts.items():
+    for lg, v in hl.items():
+        if lg != 'x-default' and v != u and alts.get(v, {}).get('it-IT' if lg == 'en' else 'en') != u:
+            k = u.replace(BASE + '/', '').rstrip('/') or '(home)'; errs[k].append(f'hreflang non reciproco con {v}')
 
 # duplicazione (shingle di 8 parole, solo pagine IT località/hub)
 def txt(p):
