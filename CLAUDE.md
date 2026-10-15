@@ -49,6 +49,7 @@ Ordine sezioni: nav con selettore lingua e dropdown per regione → hero (breadc
 - Messaggio fiscale: Vesta fa da sostituto d'imposta, versa la cedolare secca calcolata sulla quota netta del proprietario (al netto di commissione e costi) e, dove previsto, inquadra parte delle spese come rimborso spese, così non rientrano nei ricavi e non vengono tassate. Vesta NON restituisce soldi al proprietario: mai "ti rimborsiamo", "ti riconosciamo il rimborso", "deduzione delle spese". Formulazione variata da pagina a pagina, sempre con "dove previsto" o equivalente. Il titolo della sezione fiscale non contiene la città e parla di vantaggi fiscali gestiti da Vesta, non di imposte o di netto. Sugli hub la sezione fiscale è solo un breve rimando alle pagine città.
 - Milano non è una "curva piatta": mercato attivo tutto l'anno ma dinamico, con picchi di fiere ed eventi.
 - Pagine di servizio (Vesta non ha immobili lì): Cortina, Courmayeur, Valtournenche, Palermo. Niente "i nostri immobili" locali, niente numeri di unità o recensioni locali; i collaboratori locali si indicano come già presenti (non "attivati sul posto"). Leve consentite: "già operativi in Valle d'Aosta" (Cervinia) e "già operativi in Sicilia" (Marzamemi). Ammesso anche qui il dato aziendale "Oltre 80 immobili gestiti in Italia" (non è un dato locale). Non presentare la gestione come "a distanza" (né nei titoli né in evidenza).
+- Cortina resta pagina di servizio: i collaboratori locali (local host, housekeeping, manutenzione) sono confermati, ma Vesta non dichiara immobili gestiti a Cortina. Niente frasi come "Dove abbiamo immobili, abbiamo persone in zona" (EN "Where we have properties, we have people on the ground").
 - Valtournenche non riusa dati o testi della pagina Cervinia; Cervinia cita Valtournenche solo col link alla sua pagina. Copertura di Valtournenche: paese e zone limitrofe, non tutto il comune.
 - Imposta di soggiorno: mai indicare importi.
 - Pagine Sicilia: non parlare di modalità di check-in.
@@ -59,7 +60,7 @@ Ordine sezioni: nav con selettore lingua e dropdown per regione → hero (breadc
 
 - Lombardia: CIR (uno per unità, da ROSS1000 dopo la comunicazione al SUAP, prima del CIN, da indicare negli annunci), CIN, ROSS1000 entro il 5 del mese, Questura entro 24 ore, imposta comunale.
 - Valle d'Aosta: CIR dal Comune tramite piattaforma regionale, da esporre, poi CIN; ISTAT mensile; Questura entro 24 ore; imposta di soggiorno versata due volte l'anno.
-- Veneto (Cortina): CIN da esporre e negli annunci, Alloggiati Web entro 24 ore, statistiche regionali, imposta comunale.
+- Veneto (Cortina): comunicazione di locazione turistica alla Regione su ROSS1000, che assegna il codice regionale; in Veneto il codice regionale non va esposto (nessun obbligo). CIN chiesto sulla BDSR partendo dal codice regionale, esposto con la targa all'ingresso esterno (in condominio anche sulla porta dell'appartamento) e indicato negli annunci. Alloggiati Web entro 24 ore, comunicazioni ISTAT su ROSS1000, imposta di soggiorno comunale (a Cortina la versa il gestore ogni trimestre, anche sulle prenotazioni Airbnb).
 - Sardegna: IUN regionale e CIN, statistiche (SIRED/ROSS1000), Alloggiati Web, imposta comunale.
 - Sicilia: CIR su Turist@t e CIN, entrambi da esporre; trasmissione giornaliera anche a movimento zero; Alloggiati Web.
 
