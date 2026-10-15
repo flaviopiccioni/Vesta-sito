@@ -23,7 +23,7 @@ Sul sito lavorano due persone (Flavio e Federico). Rispondi sempre in italiano.
 - Slug EN diversi: lake-como, lombardy, aosta-valley, sardinia, sicily. Gli altri sono uguali (anche /en/milano/).
 - Hub regionali: Lombardia (Milano, Lago di Como), Valle d'Aosta (Cervinia, Valtournenche, Courmayeur), Sardegna (Stintino, Porto San Paolo, Teulada), Sicilia (Marzamemi, Palermo). Cortina non ha hub.
 - Tutti gli URL interni, canonical, og:url, hreflang, sitemap e llms.txt usano lo SLASH FINALE (es. /it/milano/).
-- Tre hreflang per pagina (it-IT, en-US, x-default), reciproci; il selettore `<a class="lang">` punta all'hreflang dell'altra lingua.
+- Tre hreflang per pagina (it-IT, en, x-default), reciproci; il selettore `<a class="lang">` punta all'hreflang dell'altra lingua.
 - Ogni modifica trasversale a più pagine va fatta con uno script, poi verificata su tutte le pagine coinvolte.
 - `tools/` (script di verifica) sta nel repo ma è bloccata online da `_redirects`.
 - `docs/` contiene la documentazione interna (dati località verificati, note di progetto, brief, lista Da fare in `docs/da-fare.md`): è in `.gitignore`, resta SOLO in locale e non va mai committata né pubblicata. Si condivide a parte. Se manca, chiedila all'utente. Dove i brief contraddicono questo file, vale questo file.
