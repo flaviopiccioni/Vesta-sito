@@ -10,7 +10,7 @@ SITE = sys.argv[1] if len(sys.argv) > 1 else '.'
 if not os.path.isdir(SITE): sys.exit(f'Cartella "{SITE}" non trovata: lancia lo script dalla radice del repository.')
 os.chdir(SITE)
 BASE = 'https://vestadomus.it'
-HUBS = {'lombardia','lombardy','valle-d-aosta','aosta-valley','sardegna','sardinia','sicilia','sicily'}
+HUBS = {'lombardia','lombardy','liguria','valle-d-aosta','aosta-valley','sardegna','sardinia','sicilia','sicily'}
 LEGAL = {'privacy','cookie-policy'}
 # Pagine presenti nel repository ma non pubblicate (fuori da sitemap e llms.txt): vedi docs/DA-RIPRISTINARE.md
 NON_PUBBLICATE = {'/it/guide/agenzie-affitti-brevi-milano/', '/en/guides/short-term-rental-agencies-milan/'}

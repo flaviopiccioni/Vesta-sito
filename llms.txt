@@ -1,6 +1,6 @@
 # Vesta
 
-> Vesta è una società di gestione affitti brevi e medi con sede a Milano. Gestisce affitti brevi (1-30 giorni), affitti di medio termine (1-18 mesi) e case vacanza per conto dei proprietari, con gestione completa: annuncio, prezzi e revenue management, ospiti, check-in, pulizie, manutenzioni, adempimenti e gestione fiscale. Oltre 80 immobili gestiti in Italia. Opera in Lombardia (Milano, Lago di Como), Valle d'Aosta (Cervinia, Valtournenche, Courmayeur), Veneto (Cortina d'Ampezzo), Sardegna (Stintino, Porto San Paolo, Teulada) e Sicilia (Marzamemi, Palermo).
+> Vesta è una società di gestione affitti brevi e medi con sede a Milano. Gestisce affitti brevi (1-30 giorni), affitti di medio termine (1-18 mesi) e case vacanza per conto dei proprietari, con gestione completa: annuncio, prezzi e revenue management, ospiti, check-in, pulizie, manutenzioni, adempimenti e gestione fiscale. Oltre 80 immobili gestiti in Italia. Opera in Lombardia (Milano, Lago di Como), Valle d'Aosta (Cervinia, Valtournenche, Courmayeur), Veneto (Cortina d'Ampezzo), Liguria (riviera di Ponente e di Levante), Sardegna (Stintino, Porto San Paolo, Teulada) e Sicilia (Marzamemi, Palermo).
 
 Telefono e WhatsApp: +39 351 740 7898 · Email: info@vestadomus.it · Valutazione gratuita dell'immobile dal modulo presente in ogni pagina località.
 
@@ -9,7 +9,7 @@ Telefono e WhatsApp: +39 351 740 7898 · Email: info@vestadomus.it · Valutazion
 - Gestione affitti brevi e case vacanza: annuncio, servizio fotografico, pubblicazione sui portali internazionali, strategia di prezzo dinamica, prenotazioni, check-in e check-out, pulizie e biancheria, assistenza agli ospiti, gestione manutenzioni, gestione recensioni e report periodico al proprietario.
 - Gestione affitti di medio termine (1-18 mesi), per professionisti in trasferta, expat, studenti e personale sanitario; la scelta tra breve e medio termine si fa sui dati dell'immobile e della zona.
 - Gestione fiscale: Vesta opera come sostituto d'imposta e versa la cedolare secca calcolata sulla quota netta del proprietario, al netto di commissione e costi.
-- Adempimenti e messa in regola: CIN nazionale, codici regionali dove previsti (CIR in Lombardia, Valle d'Aosta, Sicilia e Veneto, tramite ROSS1000; IUN in Sardegna), comunicazione degli ospiti alla Questura (Alloggiati Web), comunicazioni ISTAT e imposta di soggiorno.
+- Adempimenti e messa in regola: CIN nazionale, codici regionali dove previsti (CIR in Lombardia, Valle d'Aosta, Sicilia e Veneto, tramite ROSS1000; CITRA in Liguria; IUN in Sardegna), comunicazione degli ospiti alla Questura (Alloggiati Web), comunicazioni ISTAT e imposta di soggiorno.
 - Portale proprietario con prenotazioni, ricavi e disponibilità in tempo reale; il proprietario può bloccare periodi per uso personale.
 - Consulenza e investimenti immobiliari: valutazione e ottimizzazione di immobili a reddito.
 
@@ -35,6 +35,10 @@ Telefono e WhatsApp: +39 351 740 7898 · Email: info@vestadomus.it · Valutazion
 ## Veneto
 
 - [Gestione affitti brevi a Cortina d'Ampezzo](https://vestadomus.it/it/cortina/): case vacanza e affitti brevi a Cortina, nelle Dolomiti, su due stagioni: inverno sulle piste ed estate in montagna; codice regionale e CIN intestati a Vesta. English: [Cortina d'Ampezzo](https://vestadomus.it/en/cortina/)
+
+## Liguria
+
+- [Gestione affitti brevi in Liguria](https://vestadomus.it/it/liguria/): pagina regionale su tutta la riviera ligure, di Ponente e di Levante (province di Imperia, Savona, Genova e La Spezia); breve e medio termine dal bilocale in su, stagione allungata oltre l'estate; adempimenti CITRA, CIN, ROSS1000 e Alloggiati Web gestiti. English: [Liguria](https://vestadomus.it/en/liguria/)
 
 ## Sardegna
 
