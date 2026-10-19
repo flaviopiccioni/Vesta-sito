@@ -24,6 +24,8 @@ Sul sito lavorano due persone (Flavio e Federico). Rispondi sempre in italiano.
 - Hub regionali: Lombardia (Milano, Lago di Como), Valle d'Aosta (Cervinia, Valtournenche, Courmayeur), Sardegna (Stintino, Porto San Paolo, Teulada), Sicilia (Marzamemi, Palermo), Liguria (hub senza pagine figlie, slug /it/liguria/ e /en/liguria/). Cortina non ha hub.
 - Tutti gli URL interni, canonical, og:url, hreflang, sitemap e llms.txt usano lo SLASH FINALE (es. /it/milano/).
 - Tre hreflang per pagina (it-IT, en, x-default), reciproci; il selettore `<a class="lang">` punta all'hreflang dell'altra lingua.
+- Ogni pagina ha `<meta property="og:site_name" content="Vesta">` subito dopo `og:type`: senza, Google mostra "Vesta Domus" come nome del sito. Nel footer la partita IVA si scrive "P.IVA" (EN "VAT no.").
+- Tabella adempimenti (`.gtable`) delle pagine località: sotto i 640 px diventa a schede con l'etichetta "Chi lo gestisce:" / "Who handles it:" (CSS nella pagina). Nelle pagine nuove copiare anche questa regola.
 - Ogni modifica trasversale a più pagine va fatta con uno script, poi verificata su tutte le pagine coinvolte.
 - `tools/` (script di verifica) sta nel repo ma è bloccata online da `_redirects`.
 - `docs/` contiene la documentazione interna (dati località verificati, note di progetto, brief, lista Da fare in `docs/da-fare.md`): è in `.gitignore`, resta SOLO in locale e non va mai committata né pubblicata. Si condivide a parte. Se manca, chiedila all'utente. Dove i brief contraddicono questo file, vale questo file.
@@ -85,6 +87,6 @@ Ordine sezioni: nav con selettore lingua e dropdown per regione → hero (breadc
 
 ## Checklist prima di pubblicare
 
-canonical = og:url = URL reale con slash · tre hreflang reciproci · selettore lingua coerente con l'hreflang dell'altra lingua · nessun link interno rotto · pagina in sitemap con lastmod aggiornato · dateModified e "Aggiornato a" aggiornati · title < 60 e description 120-160 · un solo H1 · JSON-LD valido con FAQ allineate · div bilanciate sezione per sezione (non solo sul totale) · nessuna foto ripetuta nella pagina · oggetto del form con la località giusta · nessun "Vesta Domus".
+canonical = og:url = URL reale con slash · tre hreflang reciproci · selettore lingua coerente con l'hreflang dell'altra lingua · nessun link interno rotto · pagina in sitemap con lastmod aggiornato · dateModified e "Aggiornato a" aggiornati · title < 60 e description 120-160 · un solo H1 · JSON-LD valido con FAQ allineate · div bilanciate sezione per sezione (non solo sul totale) · nessuna foto ripetuta nella pagina · oggetto del form con la località giusta · og:site_name = Vesta · nessun "Vesta Domus".
 
 L'unico `href="#"` ammesso è il pulsante "Impostazioni cookie" nel footer.
