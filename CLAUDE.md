@@ -39,6 +39,7 @@ Ordine sezioni: nav con selettore lingua e dropdown per regione → hero (breadc
 - Sezioni con foto: struttura `wrap split` (immagine in `.ph`, testo a fianco), alternate con `.rev`. Sezioni solo testo: `sec-head` + `prose`. Mai griglie di card dentro una sezione con foto.
 - Breadcrumb: `div class="bcn" role="navigation"`, MAI il tag `nav` (il sito rende sticky ogni nav).
 - Menu mobile: ordine flex brand, burger, nlinks, nav-r; non alterarlo.
+- Dropdown "Destinazioni" (home e team IT/EN): ogni regione è un `<span class="ndgrp">` con titolo `.ndg` e i suoi link; su desktop (≥861 px) il menu va su due colonne (CSS `columns:2`), così non supera l'altezza dei portatili. Una nuova località va dentro il gruppo della sua regione, una nuova regione in un nuovo `ndgrp`. Quando le località saranno molte di più si valuterà un pannello a cascata (regioni a sinistra, città a destra).
 - Un solo blocco JSON-LD con `@graph`. Le FAQ dello schema coincidono parola per parola con quelle visibili; name/description del nodo WebPage coincidono con title e meta description. Convenzione @id: `<base>/#organization`, `<base>/#website`, `<url>#webpage`, `#breadcrumb`, `#place`, `#service`, `#faq`.
 - Nuova pagina = copia di una esistente. Subito dopo correggi: canonical, og:url, hreflang, selettore lingua, oggetto del form e campo nascosto pagina/page. Aggiungila a sitemap.xml, llms.txt, dropdown, footer e box "Altre località" di tutte le pagine della lingua.
 
