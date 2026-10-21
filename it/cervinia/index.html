@@ -249,4 +249,5 @@ vdApplyConsent();
 })();
 </script>
 <div id="vd-popup" class="vd-popup" onclick="if(event.target===this)this.classList.remove('show')"><div class="vd-popup-card"><div class="vd-popup-ic">✓</div><h3>Richiesta inviata!</h3><p>Grazie! Ti ricontatteremo il prima possibile, di solito entro 48 ore.</p><button class="btn btn--solid" onclick="document.getElementById('vd-popup').classList.remove('show')">Chiudi</button></div></div><script>document.querySelectorAll('form[action*="formspree.io"]').forEach(function(f){f.addEventListener("submit",async function(e){e.preventDefault();var b=f.querySelector('button[type=submit]'),o=b?b.textContent:"";if(b){b.disabled=true;b.textContent="...";}try{var r=await fetch(f.action,{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}});if(r.ok){f.reset();document.getElementById("vd-popup").classList.add("show");}else{alert("Errore. Riprova o scrivici a info@vestadomus.it");}}catch(x){alert("Errore. Riprova o scrivici a info@vestadomus.it");}if(b){b.disabled=false;b.textContent=o;}});});</script><script src="/js/apt-carousel.js" defer></script>
+<script src="/js/hubspot-lead.js" defer></script>
 </body></html>
