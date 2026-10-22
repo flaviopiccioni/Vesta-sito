@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://vestadomus.it/sitemap.xml
-Sitemap: https://vestadomus.it/sitemap-prenotazioni.xml
