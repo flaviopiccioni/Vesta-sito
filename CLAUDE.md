@@ -52,13 +52,26 @@ Ordine sezioni: nav con selettore lingua e dropdown per regione → hero (breadc
 - Eccezione: un hub senza pagine figlie (oggi solo la Liguria) è l'unica pagina che presidia la regione e porta i sei blocchi, variati come sulle pagine città; niente card "Affitti brevi a <Località>". Quando nasce la prima pagina città della regione, i sei blocchi si spostano sulla città e l'hub torna al modello standard. In Liguria non si elencano comuni o borghi come zone servite (solo le due riviere e le quattro province), per lasciarli alle future pagine città.
 - Messaggio fiscale: Vesta fa da sostituto d'imposta, versa la cedolare secca calcolata sulla quota netta del proprietario (al netto di commissione e costi) e, dove previsto, inquadra parte delle spese come rimborso spese, così non rientrano nei ricavi e non vengono tassate. Vesta NON restituisce soldi al proprietario: mai "ti rimborsiamo", "ti riconosciamo il rimborso", "deduzione delle spese". Formulazione variata da pagina a pagina, sempre con "dove previsto" o equivalente. Il titolo della sezione fiscale non contiene la città e parla di vantaggi fiscali gestiti da Vesta, non di imposte o di netto. Sugli hub la sezione fiscale è solo un breve rimando alle pagine città.
 - Milano non è una "curva piatta": mercato attivo tutto l'anno ma dinamico, con picchi di fiere ed eventi.
-- Pagine di servizio (Vesta non ha immobili lì): Cortina, Courmayeur, Valtournenche, Palermo, Liguria. Niente "i nostri immobili" locali, niente numeri di unità o recensioni locali; i collaboratori locali si indicano come già presenti (non "attivati sul posto"). Leve consentite: "già operativi in Valle d'Aosta" (Cervinia) e "già operativi in Sicilia" (Marzamemi). In Liguria niente "già operativi in Liguria"; leva ammessa il dato ufficiale sui lombardi primo mercato italiano della regione. Ammesso anche qui il dato aziendale "Oltre 80 immobili gestiti in Italia" (non è un dato locale). Non presentare la gestione come "a distanza" (né nei titoli né in evidenza).
+- Pagine di servizio (Vesta non ha immobili lì): Cortina, Courmayeur, Valtournenche, Palermo, Liguria. Niente "i nostri immobili" locali, niente numeri di unità o recensioni locali; i collaboratori locali si indicano come già presenti (non "attivati sul posto"). Leve consentite: "già operativi in Valle d'Aosta" (Cervinia) e "già operativi in Sicilia" (Marzamemi). In Liguria niente "già operativi in Liguria"; leva ammessa il dato ufficiale sui lombardi primo mercato italiano della regione. Ammessi anche qui i dati aziendali "Oltre 80 immobili gestiti in Italia" e "6.100 ospiti accolti da gennaio a ottobre 2026" (non sono dati locali; dal 23/10/2026 stanno insieme su tutte le pagine che mostrano gli 80 immobili). Non presentare la gestione come "a distanza" (né nei titoli né in evidenza).
 - Cortina resta pagina di servizio: i collaboratori locali (local host, housekeeping, manutenzione) sono confermati, ma Vesta non dichiara immobili gestiti a Cortina. Niente frasi come "Dove abbiamo immobili, abbiamo persone in zona" (EN "Where we have properties, we have people on the ground").
 - Valtournenche non riusa dati o testi della pagina Cervinia; Cervinia cita Valtournenche solo col link alla sua pagina. Copertura di Valtournenche: paese e zone limitrofe, non tutto il comune.
 - Imposta di soggiorno: mai indicare importi.
 - Pagine Sicilia: non parlare di modalità di check-in.
 - Numeri e statistiche solo da fonti ufficiali verificate (vedi `docs/dati-localita.md`), con fonte, anno e perimetro territoriale (comune, comprensorio, provincia, regione). Niente BnbCalc per occupazione e tariffe. Mai lasciare segnaposto tipo "[DA VERIFICARE]" in pagina.
 - Dopo ogni modifica di contenuto aggiorna la riga "Aggiornato a", il dateModified dello schema e il lastmod in sitemap.
+
+## Pagine ospiti (landing appartamenti)
+
+Le pagine ospiti (prima: /it/cervinia/appartamenti/, /en/cervinia/apartments/) parlano a chi cerca casa in affitto, non al proprietario. Servono a separare i due pubblici nelle ricerche.
+
+- Si scrivono anche in ottica di comunicazione e marketing, non solo SEO. Tono commerciale, niente formule tecniche.
+- Title e H1 semplici ("Appartamenti in affitto a <Località>"): niente numero di appartamenti, niente "scegli la casa, controlla le date, prenota online".
+- La sezione con le case si chiama "I nostri appartamenti a <Località>".
+- Posizione, distanza dalle piste, garage o posti auto, ZTL e accesso, ski room, animali: vanno nella scheda del singolo appartamento, non in sezioni generali. "Come arrivare" resta solo generale (aeroporti, gomme invernali o catene).
+- Sezione servizi: titolo "Prenota direttamente con noi" (non "prenoti da chi gestisce la casa", non "appartamenti gestiti da noi"). Elenca i servizi per l'ospite: prenotazione diretta senza intermediari né commissioni extra, assistenza, pulizie, lenzuola e asciugamani, kit di benvenuto, check-in, sconto skipass dove c'è. Solo servizi che Vesta ha davvero: si verificano sugli annunci di book.vestadomus.it.
+- FAQ: niente domande banali scritte solo per il SEO ("Come prenotare…", "Quante persone…"). Per l'estate meglio una sezione "Vivere <Località> d'estate" che racconta cosa si fa.
+- In fondo due blocchi per i proprietari: uno verso la pagina gestione della località ("Vesta può gestirla, anche se la usi tu per parte della stagione"), uno per chi ha casa in un'altra località verso la home.
+- Quando l'anteprima è pronta, il link va inserito nel task su Monday: Flavio dà il feedback lì.
 
 ## Adempimenti per regione
 
