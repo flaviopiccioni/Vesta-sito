@@ -180,7 +180,7 @@ footer ul{list-style:none;padding:0;display:grid;gap:.5rem}footer li,footer .fl 
 <h3>Cookie preferences</h3><p class="ck-intro">Choose which cookie categories to allow. Technical cookies are always active because they are essential for the site to work.</p>
 <div class="ck-cat"><div class="ck-cat-head"><h4>Technical (necessary)</h4><span class="ck-always">Always on</span></div><p>Essential for the site to work properly and to store your preferences (e.g. language). No consent required.</p></div>
 <div class="ck-cat"><div class="ck-cat-head"><h4>Analytics (statistics)</h4><label class="ck-switch"><input type="checkbox" id="ck-analytics"><span class="ck-slider"></span></label></div><p>Help us understand, in aggregate form, how the site is used (Google Analytics). Enabled only with your consent.</p></div>
-<div class="ck-cat"><div class="ck-cat-head"><h4>Marketing and profiling</h4><label class="ck-switch"><input type="checkbox" id="ck-marketing"><span class="ck-slider"></span></label></div><p>Used by third parties to show ads in line with your interests. Enabled only with your explicit consent.</p></div>
+<div class="ck-cat"><div class="ck-cat-head"><h4>Marketing and profiling</h4><label class="ck-switch"><input type="checkbox" id="ck-marketing"><span class="ck-slider"></span></label></div><p>Used by third parties to show ads in line with your interests and, with HubSpot, to link the pages you visit to the requests you send us. Enabled only with your explicit consent.</p></div>
 <div class="ck-modal-actions"><button type="button" class="ckb ghost" onclick="ckRejectAll()">Reject all</button><button type="button" class="ckb" onclick="ckSave()">Save preferences</button><button type="button" class="ckb solid" onclick="ckAcceptAll()">Accept all</button></div>
 </div></div>
 <script>
@@ -200,8 +200,16 @@ function ckSave(){ckStore({technical:true,analytics:document.getElementById('ck-
 var ID='G-91YC2FYM24',loaded=false;
 function cons(){try{return JSON.parse(localStorage.getItem('vesta_cookie_consent')||'null')}catch(e){return null}}
 function clearGa(){document.cookie.split(';').forEach(function(x){var n=x.split('=')[0].trim();if(n.indexOf('_ga')===0){['','.vestadomus.it','vestadomus.it'].forEach(function(d){document.cookie=n+'=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/'+(d?';domain='+d:'')})}})}
+/* HubSpot (148661351) — caricato SOLO dopo consenso ai cookie di marketing e profilazione */
+var hsLoaded=false;
+function clearHs(){['__hstc','__hssc','__hssrc','hubspotutk','messagesUtk'].forEach(function(n){['','.vestadomus.it','vestadomus.it'].forEach(function(d){document.cookie=n+'=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/'+(d?';domain='+d:'')})})}
+function hubspot(ok){
+ if(ok){if(!hsLoaded){hsLoaded=true;var h=document.createElement('script');h.id='hs-script-loader';h.async=true;h.defer=true;h.src='https://js-eu1.hs-scripts.com/148661351.js';document.head.appendChild(h);}}
+ else{if(hsLoaded){window._hsq=window._hsq||[];window._hsq.push(['doNotTrack']);}clearHs();}
+}
 window.vdApplyConsent=function(){
  var c=cons();
+ hubspot(!!(c&&c.marketing));
  if(c&&c.analytics){
   window['ga-disable-'+ID]=false;
   var st={analytics_storage:'granted',ad_storage:c.marketing?'granted':'denied',ad_user_data:c.marketing?'granted':'denied',ad_personalization:c.marketing?'granted':'denied'};
