@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://vestadomus.it/it/porto-san-paolo/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://vestadomus.it/it/teulada/</loc>
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://vestadomus.it/en/porto-san-paolo/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://vestadomus.it/en/teulada/</loc>
@@ -178,11 +178,11 @@
   </url>
   <url>
     <loc>https://vestadomus.it/it/guide/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://vestadomus.it/en/guides/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-05</lastmod>
   </url>
   <url>
     <loc>https://vestadomus.it/it/guide/affitto-breve-o-stagionale-montagna/</loc>
@@ -239,5 +239,13 @@
   <url>
     <loc>https://vestadomus.it/en/sardinia/apartments/</loc>
     <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://vestadomus.it/it/guide/affitti-brevi-porto-san-paolo/</loc>
+    <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://vestadomus.it/en/guides/short-term-rentals-porto-san-paolo/</loc>
+    <lastmod>2026-11-05</lastmod>
   </url>
 </urlset>

@@ -61,6 +61,14 @@ Ordine sezioni: nav con selettore lingua e dropdown per regione → hero (breadc
 - Numeri e statistiche solo da fonti ufficiali verificate (vedi `docs/dati-localita.md`), con fonte, anno e perimetro territoriale (comune, comprensorio, provincia, regione). Niente BnbCalc per occupazione e tariffe. Mai lasciare segnaposto tipo "[DA VERIFICARE]" in pagina.
 - Dopo ogni modifica di contenuto aggiorna la riga "Aggiornato a", il dateModified dello schema e il lastmod in sitemap.
 
+## Pagine località divise (proprietari + guida)
+
+- Dal 05/11/2026 Porto San Paolo è divisa in due pagine collegate da una linguetta: la pagina proprietari (/it/porto-san-paolo/, /en/porto-san-paolo/), che deve convertire, e la guida (/it/guide/affitti-brevi-porto-san-paolo/, /en/guides/short-term-rentals-porto-san-paolo/) con mercato, zone, stagionalità, adempimenti e novità. È la pagina pilota: se clic e contatti migliorano, si divide allo stesso modo ogni pagina diventata troppo lunga.
+- Pagina proprietari: hero (lead breve, riga 80 immobili / 6.100 ospiti, pulsanti valutazione e WhatsApp) → linguetta → cosa facciamo → come funziona → perché Vesta (sei riquadri) → vantaggi fiscali → casa gestita → potenziale di reddito → FAQ dei proprietari → form → altre località. Niente frase sulla commissione. "Cosa facciamo" e "come funziona" stanno subito in alto.
+- Guida: stessa foto della pagina proprietari, riquadro verso la gestione nell'hero, sezioni di mercato (id="mercato"), zone (id="zone"), stagionalità, per chi è il servizio, adempimenti e novità, due riquadri "Affidaci la casa" (dopo il mercato e dopo gli adempimenti) e barra fissa in basso; form con oggetto "(guida)" / "(guide)". Nel menu "Il mercato" e "Dove operiamo" della pagina proprietari puntano alla guida, "Servizi" e "FAQ" della guida alla pagina proprietari.
+- Sulle pagine divise l'ordine delle sezioni e i sei blocchi si valutano sulla coppia di pagine, non sulla singola pagina.
+- Linguetta: blocco `.ptabs-band` (id "pagine" / "pages") a cavallo tra la foto e la prima sezione, grande e centrato. Con la linguetta si cambia pagina restando alla stessa altezza; riquadri, barra in basso e link tra le due pagine portano a `#pagine` / `#pages`, con la linguetta in cima allo schermo. Il passaggio è animato con le view transition del browser (`@view-transition`): sui browser che non le supportano la pagina cambia normalmente; con "riduci animazioni" niente effetti.
+
 ## Pagine ospiti (landing appartamenti)
 
 Le pagine ospiti (prima: /it/cervinia/appartamenti/, /en/cervinia/apartments/) parlano a chi cerca casa in affitto, non al proprietario. Servono a separare i due pubblici nelle ricerche.
