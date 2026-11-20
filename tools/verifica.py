@@ -61,7 +61,7 @@ for p in pages:
             fq = [n for n in g if n.get('@type') == 'FAQPage']
             vis = [(clean(q), clean(a)) for q, a in re.findall(r'<div class="faq-item"><h3>(.*?)</h3><p>(.*?)</p></div>', s, re.S)]
             # formato a domande: <h2 class="faq-q"> seguito dal primo <p class="... faq-a">
-            vis += [(clean(q), clean(a)) for q, a in re.findall(r'<h2 class="faq-q"[^>]*>(.*?)</h2>.*?<p class="[^"]*\bfaq-a\b[^"]*">(.*?)</p>', s, re.S)]
+            vis += [(clean(q), clean(a)) for _, q, a in re.findall(r'<h([23]) class="faq-q[^"]*"[^>]*>(.*?)</h\1>.*?<p class="[^"]*\bfaq-a\b[^"]*">(.*?)</p>', s, re.S)]
             if fq:
                 sch = [(x['name'], x['acceptedAnswer']['text']) for x in fq[0]['mainEntity']]
                 if [a for q, a in sch] != [a for q, a in vis]: E.append('FAQ dello schema diverse da quelle visibili')

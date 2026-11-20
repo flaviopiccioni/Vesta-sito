@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 413" width="1040" height="413">
+<rect width="1040" height="413" rx="16" fill="#FFFFFF"/>
+<text x="32" y="50" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#143C38" text-anchor="start">Your home&#39;s paperwork</text>
+<text x="32" y="76" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="400" fill="#4F6A66" text-anchor="start">We handle it, in Vesta&#39;s name</text>
+<line x1="16" y1="155" x2="1024" y2="155" stroke="#D5E0DC"/>
+<circle cx="48" cy="127" r="14" fill="#E3F0EC"/>
+<path d="M41 127 l5 5 l10 -10" stroke="#2A7971" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="76" y="133" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#143C38" text-anchor="start">CIR and CIN</text>
+<text x="700" y="133" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="400" fill="#4F6A66" text-anchor="end">Registered to Vesta</text>
+<rect x="900" y="112" width="108" height="30" rx="15" fill="#E3F0EC"/>
+<text x="954" y="132" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#2A7971" text-anchor="middle">Done</text>
+<line x1="16" y1="215" x2="1024" y2="215" stroke="#D5E0DC"/>
+<circle cx="48" cy="187" r="14" fill="#E3F0EC"/>
+<path d="M41 187 l5 5 l10 -10" stroke="#2A7971" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="76" y="193" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#143C38" text-anchor="start">Guest reporting to the police</text>
+<text x="700" y="193" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="400" fill="#4F6A66" text-anchor="end">At every arrival</text>
+<rect x="900" y="172" width="108" height="30" rx="15" fill="#E3F0EC"/>
+<text x="954" y="192" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#2A7971" text-anchor="middle">Done</text>
+<line x1="16" y1="275" x2="1024" y2="275" stroke="#D5E0DC"/>
+<circle cx="48" cy="247" r="14" fill="#E3F0EC"/>
+<path d="M41 247 l5 5 l10 -10" stroke="#2A7971" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="76" y="253" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#143C38" text-anchor="start">ISTAT reporting</text>
+<text x="700" y="253" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="400" fill="#4F6A66" text-anchor="end">Every month</text>
+<rect x="900" y="232" width="108" height="30" rx="15" fill="#E3F0EC"/>
+<text x="954" y="252" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#2A7971" text-anchor="middle">Done</text>
+<line x1="16" y1="335" x2="1024" y2="335" stroke="#D5E0DC"/>
+<circle cx="48" cy="307" r="14" fill="#E3F0EC"/>
+<path d="M41 307 l5 5 l10 -10" stroke="#2A7971" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="76" y="313" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#143C38" text-anchor="start">Tourist tax</text>
+<text x="700" y="313" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="400" fill="#4F6A66" text-anchor="end">Paid by Vesta</text>
+<rect x="900" y="292" width="108" height="30" rx="15" fill="#E3F0EC"/>
+<text x="954" y="312" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#2A7971" text-anchor="middle">Done</text>
+<line x1="16" y1="395" x2="1024" y2="395" stroke="#D5E0DC"/>
+<circle cx="48" cy="367" r="14" fill="#E3F0EC"/>
+<path d="M41 367 l5 5 l10 -10" stroke="#2A7971" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="76" y="373" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#143C38" text-anchor="start">Cedolare secca</text>
+<text x="700" y="373" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="400" fill="#4F6A66" text-anchor="end">Paid by Vesta</text>
+<rect x="900" y="352" width="108" height="30" rx="15" fill="#E3F0EC"/>
+<text x="954" y="372" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#2A7971" text-anchor="middle">Done</text>
+</svg>
