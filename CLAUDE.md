@@ -35,6 +35,7 @@ Sul sito lavorano due persone (Flavio e Federico). Rispondi sempre in italiano.
 ## Pagina località
 
 Ordine sezioni: nav con selettore lingua e dropdown per regione → hero (breadcrumb visibile, kicker, H1, riga "Aggiornato a <mese anno>", lead) → mercato (id="mercato", con frase e link all'hub) → punti di forza → servizi → sezioni locali (zone id="zone", prezzi e stagionalità, adempimenti) → FAQ (id="faq") → form (id="valutazione") → box "Altre località" (Mare/Montagna/Città/Laghi) → footer con colonne Regioni e Località.
+Eccezione Milano (modello "pagina proprietari", dal 13/11/2026, in attesa dell'ok di Flavio prima della pubblicazione): hero con riga 80 immobili / 6.100 ospiti, tre punti brevi e pulsanti valutazione + WhatsApp → cosa facciamo (sei voci e frase con link alla pagina Servizi) → costi con le barre a confronto (Con Vesta / Calcolo sul lordo, prenotazione di esempio da 600 €) e pulsante verso il form → portale proprietario con l'immagine del calendario (dati di esempio) → valorizzazione con la scheda Statuto 8 → come si comincia → FAQ compatte (su due colonne su desktop) con dentro mercato, zone, adempimenti, fisco e le altre sezioni, testi e fonti invariati → form. Lo stile sta in /css/proprietari.css. Le FAQ dello schema seguono l'ordine visibile. Non estendere ad altre località senza richiesta.
 
 - Stile: sfondo #FAFAFA, teal #2A7971, teal scuro #184440, grigio-verde #5f7d78; Cormorant Garamond per i titoli, Inter per il testo; icone Lucide caricate a fine body.
 - Sezioni con foto: struttura `wrap split` (immagine in `.ph`, testo a fianco), alternate con `.rev`. Sezioni solo testo: `sec-head` + `prose`. Mai griglie di card dentro una sezione con foto.
@@ -43,6 +44,17 @@ Ordine sezioni: nav con selettore lingua e dropdown per regione → hero (breadc
 - Dropdown "Destinazioni" (home e team IT/EN): ogni regione è un `<span class="ndgrp">` con titolo `.ndg` e i suoi link; su desktop (≥861 px) il menu va su due colonne (CSS `columns:2`), così non supera l'altezza dei portatili. Una nuova località va dentro il gruppo della sua regione, una nuova regione in un nuovo `ndgrp`. Quando le località saranno molte di più si valuterà un pannello a cascata (regioni a sinistra, città a destra).
 - Un solo blocco JSON-LD con `@graph`. Le FAQ dello schema coincidono parola per parola con quelle visibili; name/description del nodo WebPage coincidono con title e meta description. Convenzione @id: `<base>/#organization`, `<base>/#website`, `<url>#webpage`, `#breadcrumb`, `#place`, `#service`, `#faq`.
 - Nuova pagina = copia di una esistente. Subito dopo correggi: canonical, og:url, hreflang, selettore lingua, oggetto del form e campo nascosto pagina/page. Aggiungila a sitemap.xml, llms.txt, dropdown, footer e box "Altre località" di tutte le pagine della lingua.
+
+## Modello pagina proprietari (tools/modello-proprietari.py)
+
+- Serve a portare una pagina località alla struttura di Milano senza rifarla a mano. Si usa solo su richiesta e dopo l'ok di Flavio sulla pagina di Milano.
+- Per ogni pagina e lingua si scrive un file di testi in `docs/modelli/<slug>-<lingua>.json` (esempi: `docs/modelli/milano-it.json` e `milano-en.json`). I testi vanno scritti per la località, mai copiati da un'altra pagina.
+- Prova: `python3 tools/modello-proprietari.py it/<slug>/index.html docs/modelli/<slug>-it.json --prova` scrive `_anteprima/MODELLO-<slug>-it.html` senza toccare la pagina. Senza `--prova` sovrascrive la pagina e aggiorna il lastmod in sitemap. Poi sempre `python3 tools/verifica.py` e controllo visivo, anche su mobile.
+- Nel file di testi: `sostituite` (titoli delle sezioni vecchie rimpiazzate dalle nuove), `come.titolo` (sezione "Come si comincia"), `faq.ordine`, `faq.titoli` (titoli da trasformare in domande), `faq.unisci` (sezioni da unire, togliendo i punti doppi). Lo script avvisa se un titolo FAQ non è una domanda.
+- `casa` (scheda di un immobile gestito) solo dove Vesta ha immobili: mai sulle pagine di servizio (Cortina, Courmayeur, Valtournenche, Palermo, Liguria). Gli hub restano esclusi.
+- Lo script richiede beautifulsoup4 (`pip install beautifulsoup4`).
+- Dal 20/11/2026 (feedback di Flavio del 17/11) il file di testi accetta anche: `canali` (fascia dei portali che scorre), `termine` (sezione breve/medio termine presa dalla FAQ indicata in `da`, con due schede), `perche` (sezione "Perché affidare" presa dalla FAQ, con `togli`, `aggiungi` e `citazioni` di recensioni vere, testo identico all'originale), `costi.domanda`/`costi.risposta` (domanda in H3 che entra nello schema FAQ), `portale.slide` (slider di schermate, `js/portal-slider.js`), `faq.aggiungi` (domande nuove) e `ordine_sezioni`. Gli sfondi delle sezioni si alternano da soli. Le immagini del portale ricostruite si rigenerano con `python3 tools/portale-svg.py it|en`.
+- Canali: su Kross risultano Airbnb, Booking, Marriott, Vrbo (pochi immobili) e Google; Expedia no (verificato il 20/11/2026): non citarlo finché non è attivo.
 
 ## Regole editoriali
 
@@ -81,6 +93,9 @@ Le pagine ospiti (prima: /it/cervinia/appartamenti/, /en/cervinia/apartments/) p
 - FAQ: niente domande banali scritte solo per il SEO ("Come prenotare…", "Quante persone…"). Per l'estate meglio una sezione "Vivere <Località> d'estate" che racconta cosa si fa.
 - In fondo due blocchi per i proprietari: uno verso la pagina gestione della località ("Vesta può gestirla, anche se la usi tu per parte della stagione"), uno per chi ha casa in un'altra località verso la home.
 - Quando l'anteprima è pronta, il link va inserito nel task su Monday: Flavio dà il feedback lì.
+- Scheda in evidenza (`.apt.apt-feat`): una sola per pagina, sopra le schede; oggi Statuto 8 su Milano, scelta da Flavio.
+- Filtro per zona su Milano (`js/zone-filter.js`): i chip `.zidx a` mostrano solo la zona scelta; "Tutte le zone" / "All areas" riporta tutto; senza JavaScript restano link alle sezioni.
+- Slider foto (`js/apt-carousel.js`) su tutte le schede immobile, anche nelle pagine proprietari che mostrano immobili: 5 foto dal CDN Krossbooking, alt "<Nome> – foto N" / "– photo N".
 
 ## Adempimenti per regione
 

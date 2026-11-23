@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 413" width="1040" height="413">
+<rect width="1040" height="413" rx="16" fill="#FFFFFF"/>
+<text x="32" y="50" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" fill="#143C38" text-anchor="start">Statistiche</text>
+<rect x="860" y="24" width="148" height="38" rx="10" fill="#F4F7F5"/>
+<text x="934" y="49" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#143C38" text-anchor="middle">Anno 2026</text>
+<rect x="16" y="78" width="1008" height="40" rx="8" fill="#F4F7F5"/>
+<text x="32" y="104" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#4F6A66" text-anchor="start">Mese</text>
+<text x="330" y="104" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#4F6A66" text-anchor="end">Notti vendute</text>
+<text x="470" y="104" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#4F6A66" text-anchor="end">Occupazione</text>
+<text x="620" y="104" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#4F6A66" text-anchor="end">Tariffa media</text>
+<text x="770" y="104" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#4F6A66" text-anchor="end">Tua quota</text>
+<text x="890" y="104" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#4F6A66" text-anchor="end">Imposta</text>
+<text x="1008" y="104" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#4F6A66" text-anchor="end">Netto</text>
+<text x="32" y="148" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="start">Luglio</text>
+<text x="330" y="148" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">29</text>
+<text x="470" y="148" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">94%</text>
+<text x="620" y="148" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">155 €</text>
+<text x="770" y="148" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">3.049 €</text>
+<text x="890" y="148" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">640 €</text>
+<text x="1008" y="148" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="end">2.409 €</text>
+<line x1="16" y1="164" x2="1024" y2="164" stroke="#D5E0DC"/>
+<text x="32" y="194" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="start">Agosto</text>
+<text x="330" y="194" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">31</text>
+<text x="470" y="194" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">100%</text>
+<text x="620" y="194" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">170 €</text>
+<text x="770" y="194" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">3.575 €</text>
+<text x="890" y="194" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">751 €</text>
+<text x="1008" y="194" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="end">2.824 €</text>
+<line x1="16" y1="210" x2="1024" y2="210" stroke="#D5E0DC"/>
+<rect x="16" y="206" width="1008" height="40" rx="8" fill="#E3F0EC"/>
+<text x="32" y="240" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="start">Settembre</text>
+<text x="330" y="240" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">28</text>
+<text x="470" y="240" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">93%</text>
+<text x="620" y="240" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">141 €</text>
+<text x="770" y="240" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">2.633 €</text>
+<text x="890" y="240" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">553 €</text>
+<text x="1008" y="240" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="end">2.080 €</text>
+<line x1="16" y1="256" x2="1024" y2="256" stroke="#D5E0DC"/>
+<text x="32" y="286" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="start">Ottobre</text>
+<text x="330" y="286" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">24</text>
+<text x="470" y="286" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">77%</text>
+<text x="620" y="286" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">130 €</text>
+<text x="770" y="286" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">2.117 €</text>
+<text x="890" y="286" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">444 €</text>
+<text x="1008" y="286" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="end">1.673 €</text>
+<line x1="16" y1="302" x2="1024" y2="302" stroke="#D5E0DC"/>
+<text x="32" y="332" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="start">Novembre</text>
+<text x="330" y="332" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">17</text>
+<text x="470" y="332" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">57%</text>
+<text x="620" y="332" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">125 €</text>
+<text x="770" y="332" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">1.442 €</text>
+<text x="890" y="332" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">303 €</text>
+<text x="1008" y="332" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="end">1.139 €</text>
+<rect x="132" y="315" width="112" height="22" rx="11" fill="#FBEBD2"/>
+<text x="188" y="331" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#143C38" text-anchor="middle">in arrivo</text>
+<line x1="16" y1="348" x2="1024" y2="348" stroke="#D5E0DC"/>
+<text x="32" y="378" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="start">Dicembre</text>
+<text x="330" y="378" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">12</text>
+<text x="470" y="378" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">39%</text>
+<text x="620" y="378" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">160 €</text>
+<text x="770" y="378" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">1.303 €</text>
+<text x="890" y="378" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="400" fill="#143C38" text-anchor="end">274 €</text>
+<text x="1008" y="378" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#143C38" text-anchor="end">1.029 €</text>
+<rect x="132" y="361" width="112" height="22" rx="11" fill="#FBEBD2"/>
+<text x="188" y="377" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#143C38" text-anchor="middle">in arrivo</text>
+<line x1="16" y1="394" x2="1024" y2="394" stroke="#D5E0DC"/>
+</svg>
