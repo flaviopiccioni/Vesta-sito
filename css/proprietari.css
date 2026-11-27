@@ -301,3 +301,8 @@ details.qa .body{padding:0 20px 18px!important;font-size:15px}
 @media(max-width:640px){.pc-btn{display:none}.pc-slide h3{font-size:25px}}
 .svc-more a{color:#2A7971;font-weight:600;text-decoration:underline;text-underline-offset:3px}.svc-more a:hover{color:#184440}
 .quote .stars{display:block;color:#E3A44B;font-size:17px;letter-spacing:2px;margin-bottom:8px}
+/* Carosello delle case gestite (pagina proprietari Cervinia, 26/11): stesso carosello del portale, schede casa al posto delle immagini */
+.case-sec .pc-slide .apt.apt-feat {margin-top: 0; text-align: left;}
+.case-sec .pc-slide .apt-feat .aptimg {min-height: 320px;}
+.case-sec .pc-btn {top: 160px;}
+@media (max-width:760px){.case-sec .pc-slide .apt-feat .aptimg {min-height: 0;} .case-sec .pc-btn {top: 30%;}}
